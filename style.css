@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Rubik+Iso&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8ee5ee;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Londrina Solid", serif;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total size */
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: "Rubik Iso", serif;
+    color: #ffffff;
+}
+
+.bingo-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    width: 95%;
+    position: relative;
+}
+
+.bingo-cell {
+    background-color: #ffffff;
+    border: 3px solid #0000ff;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    box-sizing: border-box; /* Include padding and border in size calculation */
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0; /* Remove any internal padding */
+}
+
+.bingo-cell textarea {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    resize: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: scroll;
+    aspect-ratio: 1/1 !important;
+    box-sizing: border-box; /* Include padding and border in size calculation */
+}
+
+.bingo-cell.free {
+    cursor: default;
+}
+
+.cross {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5);
+    display: none;
+}
+
+.cross.active {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    font-size: 16px;
+    background-color: #0000ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0000cc;
+}
+
+.free {
+    font-size: 1.5rem;
+}
+
+.green {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+textarea:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.bingo-cell {
+    border: 1px solid black;
+    padding: 0; 
+    text-align: center;
+}
+
+@media screen and (max-width: 561px) {
+    .bingo-cell, .bingo-cell textarea {
+        font-size: 0.6rem; 
+    }
+
+    .free {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 421px) {
+    .free {
+        font-size: 0.9rem;
+    }
+}
