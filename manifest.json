@@ -1,0 +1,17 @@
+{
+    "name": "2025 Bingo Card",
+    "short_name": "2025",
+    "description": "A custom bingo card for 2025 to be motivated to complete tasks and push yourself throughout the year, and keep track of them in a fun, bingo like way.",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fefefe",
+    "theme_color": "#46a5d9",
+    "icons": [
+        {
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }
+    ]
+}
+  
