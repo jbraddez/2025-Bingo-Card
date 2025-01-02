@@ -1,0 +1,35 @@
+.grid-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px; 
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: contents; 
+}
+
+.grid-cell {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.85);
+    border: 1px solid rgba(230,230,230,0.6);
+    text-align: left;
+}
+
+.header .grid-cell {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+    color: #3fdf3f;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px){
+.header .grid-cell {
+    font-size: 0.9rem;
+}
+}

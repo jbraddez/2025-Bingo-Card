@@ -10,7 +10,7 @@ body {
 
 * {
     font-family: "Londrina Solid", serif;
-    box-sizing: border-box; /* Ensures padding and border are included in element's total size */
+    box-sizing: border-box; 
 }
 
 h1 {
@@ -38,10 +38,10 @@ h1 {
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    box-sizing: border-box; /* Include padding and border in size calculation */
+    box-sizing: border-box;
     cursor: pointer;
     font-size: 14px;
-    padding: 0; /* Remove any internal padding */
+    padding: 0; 
 }
 
 .bingo-cell textarea {
@@ -61,7 +61,7 @@ h1 {
     justify-content: center;
     text-overflow: scroll;
     aspect-ratio: 1/1 !important;
-    box-sizing: border-box; /* Include padding and border in size calculation */
+    box-sizing: border-box; 
 }
 
 .bingo-cell.free {
@@ -113,6 +113,21 @@ textarea:disabled {
     border: 1px solid black;
     padding: 0; 
     text-align: center;
+}
+
+.links{
+    margin: 10px 0;
+}
+
+.links a{
+    text-decoration: none;
+    color: #5a23e5;
+    margin: 0 8px;
+}
+
+.links a:hover{
+    scale: 1.1;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 561px) {
