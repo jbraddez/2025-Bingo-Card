@@ -20,6 +20,29 @@
     text-align: left;
 }
 
+
+
+.grid-row .grid-cell{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-cell a{
+    text-decoration: none;
+    color: #43556f;
+    margin-bottom: 5px;
+}
+
+.grid-row .grid-cell:nth-child(2){
+    font-size: 0.9rem;
+}
+
+.grid-cell a:hover{
+    color: #3565a9;
+    text-decoration: underline;
+}
+
 .header .grid-cell {
     background-color: #f4f4f4;
     font-weight: bold;
@@ -29,6 +52,14 @@
 }
 
 @media screen and (max-width: 768px){
+.grid-row .grid-cell{
+    font-size: 0.8rem;
+}
+
+.grid-row .grid-cell:nth-child(2){
+    font-size: 0.65rem;
+}
+
 .header .grid-cell {
     font-size: 0.9rem;
 }
